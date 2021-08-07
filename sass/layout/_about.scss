@@ -1,0 +1,38 @@
+.about__title {
+  @extend %title;
+}
+
+.about__list {
+  @extend %list;
+  @extend %listFlex;
+}
+
+.about__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+  position: relative;
+}
+
+.about__box {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.about__text {
+  @include fontStyle(14px, 1.14, var(--dark-theme-text-color), 0.03em, bold);
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
