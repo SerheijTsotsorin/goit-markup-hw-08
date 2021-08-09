@@ -1,7 +1,5 @@
 .page-header {
   border-bottom: 1px solid var(--hedear-border-color);
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .page-header__container {
@@ -92,19 +90,20 @@
     display: none;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
     margin-left: auto;
   }
 }
 
 .contacts__item {
-  @media screen and(max-width: 1199px) {
+  @media screen and(min-width: 768px) {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
@@ -123,11 +122,11 @@
 .contacts__link {
   @include fontStyle(12px, 1.16, var(--primary-text-color), 0.02em, 500);
   @extend %link;
+  display: flex;
+  align-items: center;
 
   @media screen and (min-width: 1200px) {
     @include fontStyle(14px, 1.14, var(--primary-text-color), 0.02em, 500);
-    display: flex;
-    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -147,5 +146,14 @@
   fill: currentColor;
   @media screen and (max-width: 767px) {
     display: none;
+  }
+}
+
+.contacts__icon {
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
   }
 }

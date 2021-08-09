@@ -17,18 +17,13 @@
     display: block;
     width: 100%;
     text-align: center;
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-  }
-}
-
-.footer-contacts {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
   }
 }
 
@@ -44,11 +39,13 @@
 
 .main-contacts-address {
   @include fontStyle(14px, 1.71, var(--dark-theme-text-color), 0.03em);
+  font-style: normal;
 }
 
 .main-contacts-mail,
 .main-contacts-tel {
   @include fontStyle(14px, 1.71, rgba(255, 255, 255, 0.6), 0.03em);
+  font-style: normal;
 }
 
 .footer__logo {
@@ -60,10 +57,6 @@
 }
 
 .footer-social {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
