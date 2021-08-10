@@ -27,6 +27,20 @@
   }
 }
 
+.footer-contacts {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__logo {
+  @extend %logo;
+  margin-bottom: 20px;
+  &--active {
+    color: white;
+  }
+}
+
 .main-contacts-list {
   display: block;
 }
@@ -46,14 +60,6 @@
 .main-contacts-tel {
   @include fontStyle(14px, 1.71, rgba(255, 255, 255, 0.6), 0.03em);
   font-style: normal;
-}
-
-.footer__logo {
-  @extend %logo;
-  margin-bottom: 20px;
-  &--active {
-    color: white;
-  }
 }
 
 .footer-social {

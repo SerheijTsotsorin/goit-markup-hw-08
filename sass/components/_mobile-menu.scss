@@ -63,6 +63,10 @@
     color: var(--accent-color);
   }
 
+  .nav-list__link--current {
+    color: var(--accent-color);
+  }
+
   @media screen and (min-width: 767px) {
     display: none;
   }
